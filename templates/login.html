@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/styles/project.css" />
+    <!-- <script
+      defer
+      src="{{ url_for('static', filename='styles/main.js') }}"></script> -->
+
+    <script defer src="/static/styles/main.js"></script>
+    <script defer src="https://unpkg.com/axios/dist/axios.js"></script>
+  </head>
+  <body>
+    <div class="user_login">
+      <form action="/main_page" id="login_form">
+        <label class="log-text">Login</label>
+        <div class="field">
+          <input
+            class="input-field"
+            type="text"
+            name="username"
+            placeholder="Type your Username" />
+        </div>
+        <div class="field">
+          <input
+            class="input-field"
+            type="password"
+            name="userPwd"
+            placeholder="Type your password" />
+        </div>
+        <div class="checkbox">
+          <label for="remember">remember password</label>
+          <input type="checkbox" />
+        </div>
+        <div class="btn">
+          <button class="button1">Login</button>
+          <button class="button2">Signup</button>
+        </div>
+        <button class="btn-3">Forgot Password?</button>
+      </form>
+    </div>
+  </body>
+</html>

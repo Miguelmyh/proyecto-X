@@ -1,0 +1,15 @@
+{%extends 'hello.html'%} {%block title%}Movies{%endblock%}{%block content%}
+
+<h1>All Movies</h1>
+<ul>
+  {% for movie in movies %}
+  <li>{{movie}}</li>
+  {%endfor%}
+</ul>
+
+<form action="/movies/new" method="POST">
+  <input type="text" name="title" placeholder="movie title" />
+  <button>Submit</button>
+</form>
+
+{%endblock%}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{%block title%} Document {%endblock%}</title>
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/mainpage.css') }}" /> -->
+    <link rel="stylesheet" href="/static/styles/mainpage.css" />
+    <!-- <script
+      defer
+      src="{{ url_for('static', filename='styles/main.js') }}"></script> -->
+
+    <script defer src="/static/styles/main.js"></script>
+    <script defer src="https://unpkg.com/axios/dist/axios.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/form">Greet</a>
+        <a href="/form-2">Greet 2</a>
+        <a href="/lucky">Lucky</a>
+        <a href="/movies">Movies</a>
+        <a href="/project"> Project </a>
+      </nav>
+    </header>
+    <div class="cards" id="first"></div>
+    <main id="content">
+      {% with messages = get_flashed_messages(with_categories=true)%} {%if
+      messages%} {% for category, msg in messages%}
+      <p class="flash {{category}}">{{msg}}</p>
+      {%endfor%} {%endif%}{%endwith%} {%block content%}
+      <div class="intro">
+        <div class="banner">
+          <div class="cards" id="second"></div>
+          <h1>
+            <a>
+              <div class="word">
+                <span class="letter h">H</span>
+                <span class="letter">I</span>
+                <span class="letter">!</span>
+              </div>
+            </a>
+          </h1>
+          <button>Seguir</button>
+        </div>
+      </div>
+      <section id="presentation">
+        <div class="presentation hidden">
+          <div class="main text hidden">
+            <h4>My name is</h4>
+          </div>
+          <div class="second text">
+            <h2 class="me">Miguel Hernandez.</h2>
+            <h2>I love coding</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="main-content">
+        <section class="about-me hidden">
+          <div class="hidden">
+            <div class="about-me-h2">
+              <h2>About Me</h2>
+            </div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="logos">
+            <h2 class="hidden" id="projects">Projects</h2>
+            <div class="top">
+              <div class="left">
+                <div class="logo hidden"></div>
+                <div class="logo hidden"></div>
+              </div>
+              <div class="right">
+                <div class="logo-right hidden">
+                  <div class="img-container">
+                    <img src="" alt="image" />
+                    <p>Short statement</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="left">
+                <div class="logo hidden"></div>
+                <div class="logo hidden"></div>
+              </div>
+              <div class="right">
+                <div class="logo-right hidden"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="hidden"></section>
+      </div>
+      <p></p>
+    </main>
+    {%endblock%}
+    <footer></footer>
+  </body>
+</html>

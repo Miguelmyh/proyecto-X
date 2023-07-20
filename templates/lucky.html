@@ -1,0 +1,6 @@
+{%extends 'hello.html'%} {%block title%} Lucky {%endblock%} {%block content%}
+<h1>Your lucky number is {{lucky_num}}</h1>
+
+{%if lucky_num == 7%}
+<h2>Thats my lucky number</h2>
+{%endif%} {%endblock%}

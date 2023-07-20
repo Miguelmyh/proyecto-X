@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #202020;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #171717;
+  border-radius: 25px;
+
+  justify-content: center;
+  align-items: center;
+}
+.start-btn {
+  width: 5rem;
+}
+.log-text {
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+h1 {
+  color: white;
+  font-size: 6rem;
+  margin: 20rem auto 0 auto;
+}
+
+.user_login {
+  width: 85%;
+  height: 30rem;
+  margin: 10rem auto;
+}
+
+#login_form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
+  justify-content: center;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: 4s ease-in;
+  color: #d3d3d3;
+}
+
+.checkbox {
+  color: grey;
+}
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  color: #d3d3d3;
+  height: 1.5rem;
+}
+
+#login_form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2.5em;
+}
+
+form button {
+  color: white;
+  background-color: #252525;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  height: 1.8rem;
+}
+
+.button1 {
+  margin-right: 10px;
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+}
+.button2 {
+  padding: 0.5em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+}
+
+button .button-3 {
+  margin-bottom: 3em;
+  padding: 0.5em;
+}
+
+/* 
+main-page content */
+
+.topnav {
+  background-color: #333;
+  position: relative;
+
+  transition: all 1.5s;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  transform: translateX(100px);
+  transition: all 1s ease-in-out;
+}
+
+#myLinks .displaying {
+  transform: translateX(-100px);
+  transition: all 1s ease-in-out;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  font-weight: 800;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  /* background: black; */
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  /* background-color: #ddd; */
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background: url("https://lasvegasnightclubs.com/wp-content/uploads/2018/06/Jewel-Nightclub-1024x682.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 5rem;
+  width: 100%;
+  color: white;
+}
+
+.first-div {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+  max-height: 8rem;
+  padding-left: 0.8rem;
+  margin: 2rem auto;
+  margin-bottom: 0;
+  gap: 10px;
+  background-color: whitesmoke;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#song-img {
+  height: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.left {
+  flex-grow: 1;
+  width: 22%;
+}
+.right {
+  flex-grow: 2;
+  width: 45%;
+  margin: 0;
+}
+
+.icons {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+.like {
+  height: 24px;
+  width: 24px;
+  background: url("/static/styles/images/up-arrow.png");
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg)
+    brightness(95%) contrast(80%);
+}
+
+.dislike {
+  height: 24px;
+  width: 24px;
+  background: url("/static/styles/images/down-arrow.png");
+}
+
+.loading-bar {
+  margin: 1rem;
+  border-radius: 10px;
+  height: 10px;
+  border: 1px solid white;
+}

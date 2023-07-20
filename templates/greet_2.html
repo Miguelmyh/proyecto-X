@@ -1,0 +1,10 @@
+{%extends 'hello.html'%} {%block title%} Greeter {%endblock%} {%block content%}
+<h1>Hi there {{username}}</h1>
+{%if wants_compliments%}
+<h2>OK, here are some compliments:</h2>
+<ul>
+  {%for compliment in compliments%}
+  <li>{{compliment}}</li>
+  {%endfor%}
+</ul>
+{%endif%} {%endblock%}

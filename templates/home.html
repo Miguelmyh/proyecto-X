@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/static/styles/project.css" />
+    <script defer src="/static/styles/project.js"></script>
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="#home" class="active">Logo</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <section class="main-content">
+      <div class="first-div">
+        <div class="left">
+          <img
+            id="song-img"
+            src="https://i.scdn.co/image/ab67616d00001e02dc38285950389092f1ff0766"
+            alt="image" />
+        </div>
+        <div class="right">
+          <div class="icons">
+            <div class="like"></div>
+            <div class="dislike"></div>
+          </div>
+        </div>
+      </div>
+      <div class="loading-bar"></div>
+    </section>
+  </body>
+</html>

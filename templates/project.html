@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{%block title%}Disco{%endblock%}</title>
+    <link rel="stylesheet" href="/static/styles/project.css" />
+    <!-- <script
+      defer
+      src="{{ url_for('static', filename='styles/main.js') }}"></script> -->
+
+    <script defer src="/static/styles/main.js"></script>
+    <script defer src="https://unpkg.com/axios/dist/axios.js"></script>
+  </head>
+  <body>
+    <div class="banner">
+      <h1>FeelApp</h1>
+      <form action="/login">
+        <button class="start-btn">Iniciar</button>
+      </form>
+    </div>
+  </body>
+</html>
