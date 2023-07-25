@@ -19,20 +19,20 @@
 
 - Code can also be written
 
-    <html>
-      <head>
-      <title>Yass</title>
-      </head>
-      <body>
+      <html>
+       <head>
+        <title>Yass</title>
+       </head>
+       <body>
         <p>Fine ass</p>
-      </body>
-     </html>
+       </body>
+      </html>
     
       
 - Find the following code block on line 21:
 
         <html>
-          <head>
+        <head>
             <title>Test</title>
           </head>
 
