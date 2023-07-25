@@ -25,7 +25,9 @@
       <body>
       </body>
     </html>
+    
     - Open the file.
+      
 - Find the following code block on line 21:
 
         <html>
