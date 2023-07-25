@@ -8,6 +8,10 @@
 
 ![imageee][codeblock]
 
+1. paragraphs reorganize with _soft break(two spaces)_  
+  allowing to make it ease in  
+  for each of the paragraphs
+
 >"blockquote"
 
 [readme]:https://github.com/Miguelmyh/proyecto-X/new/master?readme=1
