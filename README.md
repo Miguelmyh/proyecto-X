@@ -10,12 +10,12 @@
 
 1. paragraphs reorganize with _soft break(two spaces)_  
   allowing to make it ease in  
-  for each of the paragraphs
+  for each of the paragraphs  
 
 >"blockquote"
 >>NESTED BLOCKQUOTE
->>#### Can also add other elements
->>* like so
+>#### Can also add other elements
+>* like so
 
 [readme]:https://github.com/Miguelmyh/proyecto-X/new/master?readme=1
 [codeblock]: https://imageio.forbes.com/blogs-images/forbestechcouncil/files/2019/01/canva-photo-editor-8-7.png?format=png&width=1200
