@@ -23,8 +23,6 @@
       <title>Yass</title>
       </head>
       <body>
-      </body>
-    </html>
     
     - Open the file.
       
